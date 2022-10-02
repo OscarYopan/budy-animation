@@ -165,3 +165,16 @@ body{
 .right-leg {
   left: 85px;
 }
+
+.foot {
+  position: absolute;
+  background-color: black;
+  height: 5px;
+  width: 45px;
+  bottom: 0;
+  left: -45px;
+}
+
+.right-foot {
+  left: 7px;  
+}
