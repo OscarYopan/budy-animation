@@ -225,3 +225,26 @@ body{
   left: 80px;
   transform: rotate(45deg);
 }
+
+.close-eye {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  height: 80px;
+  width: 80px;
+  border: none;
+  border-radius: 50%;
+}
+
+.close-left-eye {
+  position: absolute;
+  top: 90px;
+  left: -15px;
+}
+
+.close-right-eye {
+  position: absolute;
+  top: 90px;
+  right: -15px;
+}
