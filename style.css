@@ -15,12 +15,11 @@ body{
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
   position: relative;
 }
 
 .budy-body {
-  position: absolute;
+  position: relative;
   background-color: coral;
   height: 450px;
   width: 150px;
@@ -126,6 +125,43 @@ body{
 }
 
 .right-eyebrow {
-  right: 10px;
-  top: 80px;
+  left: 100px;
+}
+
+.pants {
+  position: absolute;
+  bottom: 0;
+  background-color: darkblue;
+  height: 100px;
+  width: 150px;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
+}
+
+.button {
+  position: absolute;
+  background-color: darkgoldenrod;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  bottom: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.botton-button {
+  bottom: 35%;
+}
+
+.leg {
+  background-color: darkblue;
+  height: 100px;
+  width: 8px;
+  position: absolute;
+  bottom: -80px;
+  left: 60px;
+}
+
+.right-leg {
+  left: 85px;
 }
