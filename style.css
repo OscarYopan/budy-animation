@@ -57,6 +57,19 @@ body{
   border-radius: 50%;
 }
 
+.nose{
+  background-color: transparent;
+  height: 30px;
+  width: 15px;
+  border-left: 4px solid darkred;
+  border-bottom: 4px solid darkred;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-70%);
+}
+
 .mouth {
   background-color: darkred;
   width: 20px;
@@ -170,11 +183,45 @@ body{
   position: absolute;
   background-color: black;
   height: 5px;
-  width: 45px;
+  width: 40px;
   bottom: 0;
-  left: -45px;
+  left: -40px;
 }
 
 .right-foot {
   left: 7px;  
+}
+
+.arms {
+  position: absolute;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  left: -50px;
+  bottom: -15px;
+  border-top: 10px solid darkblue;
+  border-radius: 50%;
+  transform: rotate(320deg);
+}
+
+.right-arm {
+  left: 100px;
+  transform: rotate(45deg);
+}
+
+.hands {
+  background-color: coral;
+  width: 30px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  transform: rotate(300deg);
+}
+
+.right-hand {
+  top: 10px;
+  left: 80px;
+  transform: rotate(45deg);
 }
