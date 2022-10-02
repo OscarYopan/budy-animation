@@ -9,10 +9,86 @@ html{
 }
 
 body{
+  background-color: cadetblue;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  position: relative;
+}
+
+.budy-body {
+  position: absolute;
+  background-color: coral;
+  height: 450px;
+  width: 150px;
+  border: none;
+  border-radius: 90px;
+}
+
+.eye {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 80px;
+  width: 80px;
+  border: none;
+  border-radius: 50%;
+}
+
+.left-eye {
+  position: absolute;
+  top: 90px;
+  left: -15px;
+}
+
+.right-eye {
+  position: absolute;
+  top: 90px;
+  right: -15px;
+}
+
+.iris {
+  background-color: black;
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+}
+
+.mouth {
+  background-color: darkred;
+  width: 20px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: coral;
+  height: 70px;
+  width: 70px;
+  border: none;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.left-ear {
+  position: absolute;
+  left: -60px;
+  top: 100px;
+}
+
+.right-ear {
+  position: absolute;
+  right: -60px;
+  top: 100px;
+
 }
