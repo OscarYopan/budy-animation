@@ -142,6 +142,24 @@ body{
   position: absolute;
   left: -30px;
   top: 40px;
+  animation: yellowHair 2s linear infinite;
+}
+
+@keyframes yellowHair {
+  0% {
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+  }
+
+  50% {
+    border-bottom: 3px solid yellow;
+    border-top: 2px solid yellow;
+  }
+
+  100% {
+    border-bottom: 4px solid yellow;
+    border-top: 2px solid yellow;
+  }
 }
 
 .eyebrow {
@@ -151,12 +169,17 @@ body{
   position: absolute;
   left: 10px;
   top: 80px;
-  animation: sadLeft 1s linear infinite;
+  animation: sadLeft 2s linear infinite;
+
 }
 
 @keyframes sadLeft {
   0% {
     transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(15);
     background-color: yellow;
   }
 
@@ -168,12 +191,16 @@ body{
 
 .right-eyebrow {
   left: 100px;
-  animation: sadRight 1s linear infinite;
+  animation: sadRight 2s linear infinite;
 }
 
 @keyframes sadRight {
   0% {
     transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(15);
     background-color: yellow;
   }
 
@@ -277,28 +304,32 @@ body{
   width: 80px;
   border: none;
   border-radius: 50%;
-  animation: twinkle 1s infinite linear;
+  animation: twinkle 2s infinite linear;
 }
 
 .close-left-eye {
+  transform: rotate(30deg);
   position: absolute;
   top: 90px;
   left: -15px;
 }
 
 .close-right-eye {
+  transform: rotate(-30deg);
   position: absolute;
   top: 90px;
   right: -15px;
 }
 
 @keyframes twinkle {
-  from {
+  0% {
     background-image: linear-gradient(
       to bottom,
       #b65835 0%,
-      #b65835 50%,
-      #b65835 50%,
+      #b65835 40%,
+      #b6573500 41%,
+      #b6573500 59%,
+      #b65835 60%,
       #b65835 100%
     );
   }
@@ -308,12 +339,12 @@ body{
   position: absolute;
   background-color: yellow;
   opacity: .3;
-  border: groove;
+  border: none;
   border-radius: 50%;
   width: 80px;
   height: 80px;
   z-index: -10;
-  animation: power 1.5s ease-in-out infinite;
+  animation: power 2s ease-in-out infinite;
 }
 
 @keyframes power {
