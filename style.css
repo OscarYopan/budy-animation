@@ -155,12 +155,14 @@ body{
 }
 
 @keyframes sadLeft {
-  from {
+  0% {
     transform: rotate(0);
+    background-color: yellow;
   }
 
-  to {
+  100% {
     transform: rotate(30deg);
+    background-color: yellow;
   }
 }
 
@@ -170,12 +172,14 @@ body{
 }
 
 @keyframes sadRight {
-  from {
+  0% {
     transform: rotate(0);
+    background-color: yellow;
   }
 
-  to {
+  100% {
     transform: rotate(-30deg);
+    background-color: yellow;
   }
 }
 
@@ -297,5 +301,27 @@ body{
       #b65835 50%,
       #b65835 100%
     );
+  }
+}
+
+.energy {
+  position: absolute;
+  background-color: yellow;
+  opacity: .3;
+  border: groove;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  z-index: -10;
+  animation: power 1.5s ease-in-out infinite;
+}
+
+@keyframes power {
+  0%{
+    transform: scale(0%);
+  }
+
+  100%{
+    transform: scale(1000%);
   }
 }
