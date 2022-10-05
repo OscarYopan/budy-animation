@@ -143,31 +143,40 @@ body{
 }
 
 .hair {
-  width: 180px;
-  height: 10px;
-  border-top: 2px solid darkred;
-  border-bottom: 2px solid darkred;
+  width: 160px;
+  height: 100px;
+  border-bottom: 4px solid darkred;
+  border-radius: 50%;
   transform: rotate(340deg);
   position: absolute;
-  left: -30px;
-  top: 40px;
+  left: -35px;
+  top: -45px;
+  animation: yellowHair 2s linear infinite;
+}
+
+.hair2 {
+  width: 160px;
+  height: 100px;
+  border-bottom: 4px solid darkred;
+  border-radius: 50%;
+  transform: rotate(340deg);
+  position: absolute;
+  left: -40px;
+  top: -57px;
   animation: yellowHair 2s linear infinite;
 }
 
 @keyframes yellowHair {
   0% {
-    border-top: 2px solid red;
-    border-bottom: 2px solid red;
+    border-bottom: 4px solid red;
   }
 
   50% {
-    border-bottom: 3px solid yellow;
-    border-top: 2px solid yellow;
+    border-bottom: 4px solid yellow;
   }
 
   100% {
     border-bottom: 4px solid yellow;
-    border-top: 2px solid yellow;
   }
 }
 
